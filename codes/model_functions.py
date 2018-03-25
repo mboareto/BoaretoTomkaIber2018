@@ -70,7 +70,7 @@ def model_properties(d, p):
     lxs = xs[ixs,1][1:] - xs[ixs,1][:-1]
     T = xs[ixs,0][1:] - xs[ixs,0][:-1]
     if len(ixs)>2:
-        return [np.mean(xs[ixs,2]), np.mean(lxs), np.mean(T)]
+        return [np.median(xs[ixs,2]), np.median(lxs), np.median(T)]
     else:
         return [0, 0, 0]
 
